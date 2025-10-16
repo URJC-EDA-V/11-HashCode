@@ -26,14 +26,14 @@ jobs:
       id: Tests
       uses: classroom-resources/autograding-command-grader@v1
       with:
-        test-name: HeapTests
+        test-name: MapaTests
         setup-command: ''
-        command: mvn test
-        timeout: 60
+        command: mvn test -Dtest=MapaAlumnosTest
+        timeout: 10
         max-score: 10
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
-        TESTS_RESULTS: "${{steps.Tests.outputs.result}}"
+        MAPATESTS_RESULTS: "${{steps.MapaTests.outputs.result}}"
       with:
-        runners: Tests
+        runners: MapaTests
