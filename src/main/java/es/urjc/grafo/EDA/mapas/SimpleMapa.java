@@ -5,11 +5,12 @@ import java.util.Map.Entry;
 import java.util.NoSuchElementException;
 
 /**
+ * ADVERTENCIA:
  * Este "mapa" implementa una tabla hash sin resolver colisiones.
  * En caso de colisión, reemplaza la entrada previa con la nueva.
  * Esto NO debería hacerse así. Esta es una clase sin gestión de
  * colisiones cuya única finalidad es trabajar algunos de los
- * primeros conceptos de mapa.
+ * primeros conceptos de mapas.
  * Además, tiene un tamaño fijo y no se redimensiona.
  *
  * @param <K> las claves

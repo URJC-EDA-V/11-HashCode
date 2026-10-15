@@ -33,10 +33,9 @@ public class Alumno {
      * <li>Si dos objetos son iguales según el método {@code equals(Object)},
      * entonces al invocar el método {@code hashCode} en cada uno de los dos objetos
      * se debe producir el mismo resultado entero.</li>
-     * <li>No se requiere que si dos objetos no son iguales según el
-     * método {@link Object#equals(Object)}, entonces al invocar el método
-     * {@code hashCode} en cada uno de los dos objetos se produzcan resultados enteros
-     * distintos. No obstante, el programador debe ser consciente de que producir
+     * <li>Si dos objetos NO son iguales según el método {@code equals(Object)},
+     * el método {@code hashCode} no tiene que devolver necesariamente resultados distintos
+     * en cada uno de los dos objetos. No obstante, el programador debe ser consciente de que producir
      * resultados enteros distintos para objetos desiguales puede mejorar el rendimiento
      * de las tablas hash.</li>
      * </ul>
